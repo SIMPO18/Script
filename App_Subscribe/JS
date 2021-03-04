@@ -1,0 +1,50 @@
+# WPS
+^https://account.wps.*/api/users/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
+
+# PicsArt美易 pro
+^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js
+
+# Lightroom
+^https:\/\/photos\.adobe\.io\/v2\/accounts* url script-response-body Lightroom.js
+
+# PDFexpert
+^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) url script-response-body Pdfexpert.vip.js
+
+# Document
+^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$) url script-response-body documents.js
+
+# Musixmatch
+^https:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get url script-response-body musixmatch.miao.js
+
+# Boom
+^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ url 302 https://raw.githubusercontent.com/langkhach270389/Scripting/master/boom.vip.rsp
+
+# Draft
+^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body draft.js
+
+# pre_dayone
+^https:\/\/dayone\.me\/api\/users$ url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1 
+# dayone
+^https:\/\/dayone\.me\/api\/(users|v2\/users\/account-status)$ url script-response-body dayone.js
+
+# 流利说.阅读 (by@火羽&@singee)
+^https?:\/\/vira\.llsapp\.com\/api\/v2\/readings\/(accessible|limitation) url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/llyd.js
+
+# XMind思维导图 (by @JigsaWo)
+https:\/\/www\.xmind\.cn\/\_res\/devices url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/XMind.js
+
+# 马卡龙 (By @CheeryTodo)
+https://app.api.versa-ai.com/pay/order/iap/check url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/mkl.js
+
+# > NOMO
+^https:\/\/nomo\.dafork\.com\/api\/v2\/iap\/ios_product_list url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/nomo.js
+
+# 彩云小译   (by @superuv)
+;^https:\/\/api\.interpreter\.caiyunai\.com\/v1\/user url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/cyxy.js
+
+# endel
+^https:\/\/api-production\.endel\.io\/.*\/user$ url script-response-body https://raw.githubusercontent.com/leompsy/nzw9314/master/langkhach/endel.js
+^https?:\/\/api-production.endel.io\/v3\/call url script-response-body https://raw.githubusercontent.com/cpphut/surge_module/main/endel.js
+
+#grammarly
+^https:\/\/subscription\.grammarly\.com\/api\/v1$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/grammarly.js

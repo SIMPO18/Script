@@ -1,0 +1,12 @@
+# 爱美剧
+hostname = api.bjxkhc.com
+#ads
+^http(s)://api.bjxkhc.com/index.php/app/ios/ads/index url reject-dict
+^http(s)://api.bjxkhc.com/index.php/app/ios/ver/index_ios$ url reject
+^http(s)://api.bjxkhc.com/index.php/app/ios/pay/ok$ url reject-dict
+#VIP&ads
+^http(s)://api.bjxkhc.com/index.php/app/ios/(vod/show|(user|vod|topic|type)/index) url script-response-body https://raw.githubusercontent.com/wf021325/qx/master/js/aimeiju.js
+
+#南瓜电影4.7.3[文明使用，请勿用于牟利,临期我会更新id]
+hostname = p.doras.api.vcinema.cn
+^https\:\/\/p\.doras\.api\.vcinema\.cn\/v5\.0\/user\/\d+$ url script-response-body https://raw.githubusercontent.com/wf021325/qx/master/js/nangua.js

@@ -1,0 +1,11 @@
+# NAME: Emby
+# UPDATE: 2021-3-9
+
+DOMAIN-SUFFIX,emby.wtf,Emby
+DOMAIN-SUFFIX,plusmedia.site,Emby
+DOMAIN-SUFFIX,mickeycloud.com,Emby
+
+# Maying
+DOMAIN,emby.maying.club,Emby
+DOMAIN-SUFFIX,maying.club,Emby
+DOMAIN-KEYWORD,emby,Emby

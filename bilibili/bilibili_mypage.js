@@ -113,7 +113,7 @@ if (magicJS.read(blackKey)) {
         try {
           let obj = JSON.parse(magicJS.response.body);
           
-          const itemList = new Set([396, 397, 398, 399, 402, 404, 407, 410, 425, 426, 427, 428, 430, 432, 433, 434, 494, 495, 496, 497, 500, 501]);
+          const itemList = new Set([396, 397, 398, 399, 402, 404, 407, 410, 425, 426, 427, 428, 430, 432, 433, 434, 494, 495, 496, 497, 500, 501, 171, 172, 534, 8, 4, 428, 352, 1, 405, 544, 622, 171, 430, 431, 432]);
           obj["data"]["sections_v2"].forEach((element, index) => {
             element["items"].forEach((e) => {
               if (e["id"] === 622) {
@@ -131,8 +131,8 @@ if (magicJS.read(blackKey)) {
             //2022-02-16 add by ddgksf2013
             for (let ii = 0; ii < obj["data"]["sections_v2"].length; ii++) {
               if(obj.data.sections_v2[ii].title=='推荐服务'||obj.data.sections_v2[ii].title=='推薦服務'){
-                obj.data.sections_v2[ii].items[0].title='联系客服';
-                obj.data.sections_v2[ii].items[1].title='设置';
+                delete obj.data.sections_v2[ii].title;
+                delete obj.data.sections_v2[ii].title;
               }
               if(obj.data.sections_v2[ii].title=='更多服務'||obj.data.sections_v2[ii].title=='更多服务'){
                   if(obj.data.sections_v2[ii].items[0].id==500){

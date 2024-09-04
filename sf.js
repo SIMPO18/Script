@@ -4,6 +4,7 @@
 
 [Script]
 http-response ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect.+ script-path=https://raw.githubusercontent.com/SIMPO18/Script/main/sf.js, requires-body=true, timeout=60, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Sfsy.png, tag=顺丰速运获取token
+cron "20 1 * * *" script-path=https://raw.githubusercontent.com/SIMPO18/Script/main/sf.js, timeout=10, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Sfsy.png, tag=顺丰速运签到
 
 #[rewrite_local]
 #^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect.+ url script-response-body https://raw.githubusercontent.com/SIMPO18/Script/main/sf.js

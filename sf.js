@@ -2,8 +2,11 @@
 ------------------------------------------
 重写:打开小程序，进入我的页面，点击优惠券页面获取token。支持多账号。
 
-[rewrite_local]
-^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect.+ url script-response-body https://raw.githubusercontent.com/SIMPO18/Script/main/sf.js
+[Script]
+http-response ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect.+ script-path=https://raw.githubusercontent.com/SIMPO18/Script/main/sf.js, requires-body=true, timeout=60, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Sfsy.png, tag=顺丰速运获取token
+
+#[rewrite_local]
+#^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect.+ url script-response-body https://raw.githubusercontent.com/SIMPO18/Script/main/sf.js
 
 [MITM]
 hostname = mcs-mimp-web.sf-express.com

@@ -3,7 +3,7 @@
 重写:打开小程序，进入我的页面，点击优惠券页面获取token。支持多账号。
 
 [rewrite_local]
-http-response ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect.+ script-path=https://gist.githubusercontent.com/Sliverkiss/1fb1cf9cd7486d30752b1ba29b871e37/raw/sfsy.js, requires-body=true, timeout=60, tag=顺丰速运获取token
+^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect.+ url script-response-body https://raw.githubusercontent.com/SIMPO18/Script/main/sf.js
 
 [MITM]
 hostname = mcs-mimp-web.sf-express.com

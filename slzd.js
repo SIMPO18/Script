@@ -12,7 +12,7 @@
 *******************************
 [rewrite_local]
 # > 三联中读,知识会员+数字刊会员
-^https?:\/\/apis\.lifeweek\.com\.cn\/(vip\/loadMyVipV2\?|index\/home.do\?).*$ url script-response-body https://raw.githubusercontent.com/WeiGiegie/666/main/slzd.js
+^https?:\/\/apis\.lifeweek\.com\.cn\/(vip\/loadMyVipV2\?|index\/home.do\?).*$ url script-response-body https://raw.githubusercontent.com/SIMPO18/Script/refs/heads/main/slzd.js
 
 [mitm] 
 hostname = apis.lifeweek.com.cn
@@ -75,7 +75,7 @@ if (url.indexOf(p2) != -1) {
             "vipLevel": 4,
             "vipExpiration": "2999-09-09",
             "vip": true,
-            "username": "https://t.me/GieGie777",
+            "username": "Bay",
             "vipValid": true
         }, {
             "userHeadPic": "https://zdimg.lifeweek.com.cn/app/20230410/16810960185662892.jpg",
@@ -89,7 +89,7 @@ if (url.indexOf(p2) != -1) {
             "vipLevel": 6,
             "vipExpiration": "2999-09-09",
             "vip": true,
-            "username": "https://t.me/GieGie777",
+            "username": "Bay",
             "vipValid": true
         }],
         "resultMsg": "操作成功！",

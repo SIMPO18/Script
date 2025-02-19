@@ -46,10 +46,10 @@ if (url.indexOf(p1) != -1) {
                 "phone": "",
                 "uid": 2879584,
                 "userVflag": 0,
-                "remark": "此脚本仅供学习与交流，请在下载使用24小时内删除！请勿在中国大陆转载与贩卖!!!作者TG频道 : https://t.me/GieGie777",
-                "pic": "https://zdimg.lifeweek.com.cn/app/20230410/16811146599505136.jpg",
+                "remark": "FUN！",
+                "pic": "https://albumsinorder.com/wp-content/uploads/2023/08/Moon-Music-Album-Image.jpg",
                 "isVip": true,
-                "name": "https://t.me/GieGie777"
+                "name": "Bay"
             }
         },
         "resultMsg": "操作成功！",
@@ -71,14 +71,14 @@ if (url.indexOf(p2) != -1) {
 
         },
         "model": [{
-            "userHeadPic": "https://zdimg.lifeweek.com.cn/app/20230410/16810960185662892.jpg",
+            "userHeadPic": "https://albumsinorder.com/wp-content/uploads/2023/08/Moon-Music-Album-Image.jpg",
             "vipLevel": 4,
             "vipExpiration": "2999-09-09",
             "vip": true,
             "username": "Bay",
             "vipValid": true
         }, {
-            "userHeadPic": "https://zdimg.lifeweek.com.cn/app/20230410/16810960185662892.jpg",
+            "userHeadPic": "https://albumsinorder.com/wp-content/uploads/2023/08/Moon-Music-Album-Image.jpg",
             "vipLevel": 5,
             "vipExpiration": "",
             "vip": false,

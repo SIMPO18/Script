@@ -2,13 +2,11 @@
 
 端传媒Pro
 
-https://t.me/ddgksf2013
+[Script]
+http-response ^https?:\/\/app\.theinitium\.com\/subs\/[a-zA-Z_]+\/verify_subscription script-path=https://github.com/SIMPO18/Script/duan.vip.js, requires-body=true, timeout=60, tag=端传媒VIP
+http-response ^https?:\/\/api\.wallkit\.net\/api\/v\d/user url script-response-body script-path=https://github.com/SIMPO18/Script/duan.vip.js, requires-body=true, timeout=60, tag=端传媒VIP
 
-[rewrite_local]
-^https?:\/\/app\.theinitium\.com\/subs\/[a-zA-Z_]+\/verify_subscription url script-response-body https://ddgksf2013.top/scripts/duan.vip.js
-^https?:\/\/api\.wallkit\.net\/api\/v\d/user url script-response-body https://ddgksf2013.top/scripts/duan.vip.js
-
-[mitm]
+[MITM]
 
 hostname = app.theinitium.com, api.wallkit.net
 

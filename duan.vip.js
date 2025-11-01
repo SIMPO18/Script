@@ -3,8 +3,8 @@
 端传媒Pro
 
 [Script]
-http-response ^https?:\/\/app\.theinitium\.com\/subs\/[a-zA-Z_]+\/verify_subscription script-path=https://github.com/SIMPO18/Script/duan.vip.js, requires-body=true, timeout=60, tag=端传媒VIP
-http-response ^https?:\/\/api\.wallkit\.net\/api\/v\d/user url script-response-body script-path=https://github.com/SIMPO18/Script/duan.vip.js, requires-body=true, timeout=60, tag=端传媒VIP
+http-response ^https?:\/\/app\.theinitium\.com\/subs\/[a-zA-Z_]+\/verify_subscription script-path=https://raw.githubusercontent.com/SIMPO18/Script/refs/heads/main/duan.vip.js, requires-body=true, timeout=60, tag=端传媒VIP
+http-response ^https?:\/\/api\.wallkit\.net\/api\/v\d/user url script-response-body script-path=https://raw.githubusercontent.com/SIMPO18/Script/refs/heads/main/duan.vip.js, requires-body=true, timeout=60, tag=端传媒VIP
 
 [MITM]
 
